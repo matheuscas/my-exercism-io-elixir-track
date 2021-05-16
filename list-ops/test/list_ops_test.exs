@@ -91,17 +91,17 @@ defmodule ListOpsTest do
     assert L.append([], []) == []
   end
 
-  @tag :pending
+#  @tag :pending
   test "append of empty and non-empty list" do
     assert L.append([], [1, 2, 3, 4]) == [1, 2, 3, 4]
   end
 
-  @tag :pending
+#  @tag :pending
   test "append of non-empty and empty list" do
     assert L.append([1, 2, 3, 4], []) == [1, 2, 3, 4]
   end
 
-  @tag :pending
+#  @tag :pending
   test "append of non-empty lists" do
     assert L.append([1, 2, 3], [4, 5]) == [1, 2, 3, 4, 5]
   end
